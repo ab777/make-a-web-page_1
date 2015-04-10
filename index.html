@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Alex's Notes</title>
+	  <link rel="stylesheet" href="main.css">
+	</head> 
+	<body>
+			<div class = "TOC">
+				<h1> HTML and CSS Notes Table of Contents </h1>
+				<ol>
+					<li><a href="#Lesson1">Lesson 1: Basic Understanding of how the internet works</a></li>
+					<li><a href="#Lesson2">Lesson 2: HTML</a></li>
+					<li><a href="#Lesson3-1">Lesson 3.1: CSS</a></li>
+					<li><a href="#Lesson3-2">Lesson 3.2: Avoiding Repetition</a></li>
+				</ol>		
+			</div>
+			<div class = "boarder">
+				<div class="lessons">
+					<h2 id="lesson1">Basic Understanding of how the internet works</h2>
+
+					<p>
+						<u>The Web</u> refers to the 'World Wide Web', which is a collection of <u>HTML</u> (Hyper Text Markup Language) documents. Hyperlinks between pages create The Web.
+						The major pieces of The Web are: people, computers, browsers, and the Internet. <u>HTTP</u> (the main protocol of the web) connects servers to the internet. 
+						Servers are optimised for hosting files. The internet uses HTTP to communicate with you, your browser, and servers. The HTML is the text content (what you see), markup (what content looks like), References to other documents (videos, images) and links to other pages. HTML code is a <u>'structured'</u> coding language. This means that it is made up of elements with tags and attirbutes in a 'tree' like structure, called the "DOM" (Document Object Model). This structure allows the computer to read and understand the code, and produce a consistent output.
+					</p>
+				</div>
+
+				<div class ="lessons">
+					<h2 id="lesson2">HTML</h2>
+						<p>
+							<b>HTML Markup:</b> Tags<br>
+							<b>NAME tag:</b> &lt;NAME&gt; CONTENTS &lt;/NAME&gt; <br>
+							<b>Opening tag:</b> &lt;&gt; and <u>closing tag:</u> &lt;/&gt;  , the difference is the closing has a slash in front of name. <br>
+				            <b>emphasis tag (italics):</b>  &lt;em&gt; tag <br>
+							If you don't close tags, it applies it to everything after the opening tag.<br>
+							<b>HTML attributes</b>...ATTR = the name of the attribute. You can have multiple attributes. <br>
+							<b>anchor</b> = 'a' tag = for making links <br>
+							<b>href</b>="www.reddit.com"
+							<b>img</b> = images <br>
+							img src="url" <b>alt</b>="text" , it's a void tag, so it has no closing tag/content  alt text is required. alt text helps with broken requests or blind people <br>
+							White Space , text on multiple lines. <b>'br'</b> break, it's a void tag, so no closing tag needed. Can have multiple breaks. <br>
+							'p'= <b>paragraph tag</b> <br>
+							Why do we have 'p' and 'br'? <br>
+							It's because the 'br' is <b>inline</b>, and the 'p' is <b>block</b>. image is inline also <br>
+							<b>'br'</b> just ends line <br>
+							<b>'p'</b> makes an invisible box, it can have height and width. will become more important later <br>
+							<b>'span'</b> = inline <br>
+							<b>'div'</b> = block <br>
+
+							<span>&lt;span class="foo"&gt;  &lt;/span&gt; This text is black because it is in a Span tag, that is formatted through CSS to be black, bold and italic!</span><br>
+							<b>Inline</b> = a , span, br, img, strong.  <br>
+							<b>Block</b> = p, div, form <br>
+						</p>
+				</div>
+
+				<div class ="lessons" >
+					<h2 id="lesson3-1">CSS </h2>
+						<p>
+							CSS stands for <u>'Cascading Style Sheet'</u>. It is used to apply formatting to your HTML page. The most specific rules are applied, and the code will keep going down and down into the rules, to the one that best describes the element, and that rule gets applied. You can write a selector, or select an HTML tag to apply styles to. For example:<br><br>
+							.description {<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;color:red; <br>
+							} <br><br>
+							You can change anything to do with the formatting, and standardise it through CSS. It is also possible to have multiple CSS files, so you can start with a library such as Boostrap, and then use your own for customisations. 
+						</p>
+				</div>
+
+				<div class ="lessons">
+					<h2 id="lesson3-2">  DYR (Don't Repeat Yourself!) </h2>
+					<p>
+						DYR stands for <u>'Don't Repeat Yourself</u>. Be avoiding repetition in code, programmers save themselves time, and minimise errors. This is because if the same code is stored in multiple places, it means each update needs to be made multiple times, which either wastes time, or leads to inconsistent code. By storing code in one place, and referencing the same code multiple times, programmers can create more efficient and maintainable code. CSS is just one way that web developers can stay true to the DYR rule, by applying classes to similar div's, it allows formatting to stay consistent. Another example is JavaScript functions, or applying the same .JS file to multiple pages.
+					</p> 
+			</div>
+		</div>
+	</body>
+</html>
