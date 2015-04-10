@@ -1,0 +1,41 @@
+h1 {
+	font-family: Comic Sans MS;
+	color: #1111FF;
+}
+
+h2 {
+
+	font-family: Comic Sans MS;
+	color: #CCCC00;
+}
+
+h3 {
+
+	font-family: Comic Sans MS;
+	color: blue;
+}
+
+span {
+	color: black;
+	font-style:italic;
+	font-weight: bold;
+}
+.lessons {
+	background-color: #009900;
+	border-radius: 15px;
+	color: white;
+	padding: 8px;
+	margin: 8px auto;
+}
+.boarder {
+	background-color: #330099;
+	border-radius: 15px;
+	color: white;
+	padding: 8px;
+	margin: 8px auto;
+}
+
+li {
+	font-size: 1.5em;
+	line-height: 2.2em; 
+}
